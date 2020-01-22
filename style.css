@@ -8,12 +8,17 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(20, 8, 8)
+    
 }
 
 /* Preloader styling */
+
+.preload {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 8, 8);
+    transition: opacity 0.5s ease;
+}
 
 #preloader {
     position: absolute; 
@@ -39,6 +44,11 @@ body {
     from{fill: transparent}
     to{fill: rgb(187, 169, 87)}
 }
+.preload-finish {
+    display: none;
+}
+
+
 
 /* End of pre loader styling */
 
@@ -49,7 +59,7 @@ nav {
     height: 60px; 
     position: fixed; 
     top: 0;
-    background: #1ABC9C;
+    background: rgb(20, 8, 8)
   }
   
   nav ul {
@@ -100,10 +110,6 @@ nav {
   section:nth-child(odd) {
     background: #bdc3c7;
   }
-  .sections section:first-child {
-    margin-top: 60px;
-  }
-  section.active {}
   
   footer {
     height: 500px;
