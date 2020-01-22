@@ -1,3 +1,9 @@
-const preloader = document.querySelector('#preloader path');
+// const preloader = document.querySelector('#preloader path');
+// console.log(`The pattern is ${preloader.getTotalLength()}`);
+//Get the number input for preloader stroke
 
-console.log(`The pattern is ${preloader.getTotalLength()}`);
+
+
+
+
+// End of nav and active class section
