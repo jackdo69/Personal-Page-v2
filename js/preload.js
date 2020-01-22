@@ -1,7 +1,20 @@
-$(document).ready(function() {
+//show preload then show the content
+$(document).ready(function () {
     $('.wrapper').hide()
-    setTimeout(function() {
+    setTimeout(function () {
         $('.preload').fadeOut();
-        $('.wrapper').show();
+        $('.wrapper').fadeIn();
+
+        // hide when scroll down, show when scroll up
+        var prevPos = $(this).scrollTop();
+        $(window).on('scroll', function () {
+            var currentPos = $(this).scrollTop();
+            if (prevPos > currentPos) {
+                $('nav').fadeIn();
+            } else {
+                $('nav').fadeOut();
+            }
+            prevPos = currentPos;
+        });
     }, 2000)
 });
