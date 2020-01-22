@@ -1,5 +1,7 @@
 $(document).ready(function() {
+    $('.wrapper').hide()
     setTimeout(function() {
-        $('.preload').fadeOut(500, "linear")
+        $('.preload').fadeOut();
+        $('.wrapper').show();
     }, 2000)
 });

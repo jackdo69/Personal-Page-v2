@@ -74,7 +74,7 @@ nav {
   }
   nav ul li a {
     padding: 10px 0;
-    color: #fff;
+    color:rgb(204, 200, 200);
     font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
@@ -91,7 +91,7 @@ nav {
   
   h1 {
     font-size: 5rem;
-    color: #34495E;
+    color: rgb(204, 200, 200);
   }
   
   /* Sections */
@@ -99,19 +99,20 @@ nav {
   section {
     width: 100%;
     padding: 50px;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-    height: 500px;
+    background: rgb(20, 8, 8);
+    height: 100vh;
     text-align: center;
-  }
-  section:nth-child(even) {
-    background: #ecf0f1;
-  }
-  section:nth-child(odd) {
-    background: #bdc3c7;
   }
   
   footer {
-    height: 500px;
+    height: 50px;
     background: #34495e;
+  }
+
+  /* Header */
+
+  .intro {
+      top: 30%;
+      left: 20%;
+
   }
