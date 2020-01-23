@@ -110,7 +110,7 @@ nav {
     transition: all 0.2s ease;
   }
   nav ul li a:hover {
-    color: rgb(248, 159, 51);
+    color: rgb(51, 225, 248);
   }
   a.active {
     border-bottom: 2px solid #ecf0f1;
@@ -185,6 +185,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 8rem;
   }
+
   
   /* Scrolling effects */
 
@@ -200,12 +201,11 @@ nav {
 
 /* Font awesome */
 .technologies i {
-  color: rgb(248, 159, 51);
   font-size: 60px;
-  margin: 10px;
-  padding: 10px;
-  opacity: 0.8;
-  transition: transform 0.8s opacity 0.8s;
+  margin: 8px;
+  padding: 8px;
+  opacity: 0.7;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .technologies i:hover {
@@ -260,4 +260,14 @@ nav {
 
 .project:hover .middle {
   opacity: 1;
+}
+
+.middle i {
+  color: rgb(220, 223, 224);
+  margin: 5px;
+  transition: color 0.5s;
+}
+
+.middle i:hover {
+  color: rgb(141, 92, 92)
 }
