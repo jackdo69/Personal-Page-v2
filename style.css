@@ -110,7 +110,7 @@ nav {
     transition: all 0.2s ease;
   }
   nav ul li a:hover {
-    color: rgb(51, 225, 248);
+    color: rgb(170, 80, 6);
   }
   a.active {
     border-bottom: 2px solid #ecf0f1;
@@ -178,6 +178,15 @@ nav {
   .info img {
     height: 150px;
     margin-bottom: 2rem;
+    padding: 8px;
+    border: 1px solid rgb(255, 234, 234);
+    background: transparent;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+
+  .info img:hover {
+    opacity: 1;
   }
 
   .about {
@@ -200,7 +209,8 @@ nav {
   }
 
 /* Font awesome */
-.technologies i {
+.technologies i,
+.contact-box i {
   font-size: 60px;
   margin: 8px;
   padding: 8px;
@@ -208,12 +218,13 @@ nav {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.technologies i:hover {
+.technologies i:hover,
+.contact-box i:hover {
   opacity: 1;
   transform: scale(1.1);
 }
 
-/* Projects */
+/* Projects  scrolling styling*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -226,7 +237,6 @@ nav {
   height: auto;
   margin: 10px; 
   will-change: transform; 
-  opacity: 1;
   opacity: calc(var(--visible-y) * var(--visible-y));
   transform: scale(calc(0.5 + calc(var(--visible-y) * 0.5)));
   background-color: rgb(44, 42, 42);
