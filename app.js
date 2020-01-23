@@ -1,5 +1,4 @@
-
-
+//Hide & Show menu when scrolling
 var prevPos = $(this).scrollTop();
         $(window).on('scroll', function () {
             var currentPos = $(this).scrollTop();
@@ -11,17 +10,8 @@ var prevPos = $(this).scrollTop();
             prevPos = currentPos;
         });
 
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-// var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementsByTagName("nav").style.top = "0";
-//   } else {
-//     document.getElementsByTagName("nav").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
 
+//Show and hide the preload
 var myVar;
 
 function myFunction() {

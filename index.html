@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://kit.fontawesome.com/1bfaa240fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body onload="myFunction()">
+    <!-- Preloader -->
     <div id="preload">
         <svg id="preloader" width="165" height="117" viewBox="0 0 165 117" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -20,9 +22,13 @@
                 stroke="#F9E2E2" stroke-width="5" />
         </svg>
     </div>
+    <!-- End of preloader -->
 
+    <!-- Main content -->
     <div id="wrapper" style="display:none;">
+        <!-- Navigation -->
         <nav class="w3-animate-opacity">
+            <img src="./img/logo.png" alt="logo">
             <ul>
                 <li><a href="#1">Home</a></li>
                 <li><a href="#2">About</a></li>
@@ -30,30 +36,74 @@
                 <li><a href="#4">Contact</a></li>
             </ul>
         </nav>
+        <!-- End of Navigation -->
 
         <div class="sections">
+            <!-- Header -->
             <section id="1">
-                <div
-                  class="hero">
-                    <h1 
-                    class="intro w3-animate-opacity">Hi, I am Jack.</h1>
-                    <p class="white">A Junior web developer.</p>
+                <div class="hero">
+                    <h1 class="intro w3-animate-opacity">Hi, I am Jack.</h1>
+                    <p class="white">I build things for the web.</p>
                 </div>
+            </section>
+            <!-- End of Header -->
 
-            </section>
+            <!-- About -->
             <section id="2">
-                <div 
-                    class="test">
-                    <h1>Second</h1>
-                    <p class="white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, cum.</p>
+                <div class="about">
+                    <div class="info">
+                        <img src="#" alt="Profile">
+                        <p class="white">I am a Vietnamese coder based in Sydney. I mainly work on Javascript framework
+                            (Vue and React) along with many other tools (Firebase, Wordpress..) Besides from coding, I
+                            love surfing, hanging out with my mates and reading manga.</p>
+                    </div>
+                    <div class="technologies white">
+                        <h3>Technologies I use:</h3>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-vuejs"></i>
+                        <i class="fab fa-wordpress"></i>
+                        <i class="fab fa-git-alt"></i>
+                    </div>
                 </div>
-                
             </section>
+
             <section id="3">
-                <h1>Third</h1>
+                <div class="projects white">
+                    <h3>My work</h3>
+                    <div class="container">
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/IMQBh26.png" alt="">
+                        </div>
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/Gbw8Caj.png" alt="">
+                        </div>
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/lm1sJzB.png" alt="">
+                        </div>
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/HrRKTBH.png" alt="">
+                        </div>
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/jpPdKcQ.png" alt="">
+                        </div>
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/c45p7xT.png" alt="">
+                        </div>
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/JOXdPer.png" alt="">
+                        </div>
+                        <div class="project" data-scroll>
+                            <img src="https://i.imgur.com/fKuhUOS.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </section>
+
             <section id="4">
-                <h1>Fourth</h1>
+                <div class="contact" style="background-color: aliceblue;"></div>
             </section>
         </div>
 
@@ -63,9 +113,12 @@
     <script src="./app.js"></script>
     <script>
         ScrollOut({
-            targets: '.test'
+            threshhold: 0.5,
+            cssProps: {
+                visibleY: true
+            }
         });
-      </script>
+    </script>
 </body>
 
 </html>
