@@ -1,0 +1,73 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+
+@media only screen and (max-width: 1200px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sub-heading {
+        width: 20%;
+    }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    .sub-heading {
+        width: 30%;
+    }
+
+    .project {
+        width: calc(50% - 20px);
+    }
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    section {
+        height: auto;
+        padding: 1em;
+    }
+
+    #s1 {
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .sub-heading {
+        width: 48%;
+        margin: auto;
+    }
+
+    .project {
+        width: calc(90% - 20px);
+    }
+
+    .technologies i,
+    .contact-box i {
+        font-size: 40px;
+    }
+
+    .sub-heading {
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+}
+
+
+/* Small phones: from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    
+}
