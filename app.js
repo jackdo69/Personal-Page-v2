@@ -19,8 +19,17 @@ function myFunction() {
 }
 
 function showPage() {
-    console.log('showpage');
-    
   document.getElementById("preload").style.display = "none";
   document.getElementById("wrapper").style.display = "block";
+}
+
+//Show dropdown
+function dropdown() {
+  var x = document.getElementById("topnav");
+  if (x.className === "nav-list") {
+    x.className += " responsive"
+  } else {
+    x.className = "nav-list"
+  }
+  
 }

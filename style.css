@@ -90,6 +90,10 @@ nav {
     background: rgb(20, 8, 8);
     text-align: center;
   }
+
+  nav .dropdown {
+    display: none;
+  }
   
   nav ul {
     float: right;
