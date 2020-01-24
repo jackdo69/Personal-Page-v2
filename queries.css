@@ -87,6 +87,11 @@
         font-size: 22px;
     }
 
+    nav img {
+        height: 0px;
+    }
+}
+
 
 /* Small phones: from 0 to 480px */
 

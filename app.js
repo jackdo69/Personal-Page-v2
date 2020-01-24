@@ -15,7 +15,7 @@ var prevPos = $(this).scrollTop();
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 2000);
+  myVar = setTimeout(showPage, 3000);
 }
 
 function showPage() {
@@ -31,5 +31,12 @@ function dropdown() {
   } else {
     x.className = "nav-list"
   }
+}
+
+
+//Preload stroke calculation
+const preload = document.querySelectorAll("#preload path");
+for (let i = 0; i < preload.length; i++) {
+  console.log(`letter ${i} is ${preload[i].getTotalLength()}`);
   
 }
