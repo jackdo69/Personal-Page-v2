@@ -40,7 +40,7 @@ body {
 #preloader path:nth-child(2){
   stroke-dasharray: 327;
   stroke-dashoffset: 327;
-  animation: line-anim 4s ease forwards;
+  animation: line-anim 3s ease forwards;
 }
 
 
@@ -83,6 +83,11 @@ body {
 .wrapper { display: none}
 
 /* Navigation */
+.nav {
+  background: rgb(20, 8, 8);
+  width: 100%;
+}
+
 nav img {
   height: 50px;
   float: left;
