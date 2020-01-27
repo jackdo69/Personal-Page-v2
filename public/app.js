@@ -24,14 +24,14 @@ function showPage() {
 }
 
 //Show dropdown
-function dropdown() {
-  var x = document.getElementById("topnav");
-  if (x.className === "nav-list") {
-    x.className += " responsive"
-  } else {
-    x.className = "nav-list"
-  }
-}
+// function dropdown() {
+//   var x = document.getElementById("topnav");
+//   if (x.className === "nav-list") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "nav-list";
+//   }
+// }
 
 
 //Preload stroke calculation
@@ -39,4 +39,17 @@ const preload = document.querySelectorAll("#preload path");
 for (let i = 0; i < preload.length; i++) {
   console.log(`letter ${i} is ${preload[i].getTotalLength()}`);
   
+}
+
+//Toggle dropdown menu in mobile device
+
+document.onclick = function(e) {
+  var x = document.getElementById("topnav");
+  if (e.target.className === 'fas fa-bars fa-2x' && x.className === 'nav-list') {
+    x.className += " responsive"
+  } else if (e.target.className === 'fas fa-bars fa-2x' && x.className === 'nav-list responsive'){
+    x.className = 'nav-list'
+  } else {
+    x.className = 'nav-list'
+  }
 }
