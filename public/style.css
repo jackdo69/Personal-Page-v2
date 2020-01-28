@@ -96,14 +96,15 @@ nav img {
 
 
 nav {
-    left: 15%;
+    padding: 0 11em 0 13em;
+    width: 100%;
     z-index: 50;
-    width: 70%;
     height: 60px; 
     position: fixed; 
     top: 0;
     background: rgb(20, 8, 8);
     text-align: center;
+    opacity: 0.8;
   }
 
   nav .dropdown {

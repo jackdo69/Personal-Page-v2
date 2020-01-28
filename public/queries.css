@@ -63,6 +63,10 @@
         display: none;
     }
 
+    nav {
+        padding: 0 4em 0 5em;
+    }
+
     nav .dropdown {
         display: block;
         float: right;
@@ -76,10 +80,9 @@
     .nav-list.responsive {
         display: block;
         width: 45%;
-        border: 1px solid rgb(255, 219, 219);
         position: absolute;
         top: 2.5em;
-        right: -2%;
+        right: 2%;
         background: rgb(20, 8, 8);
         opacity: 0.8;
     }
