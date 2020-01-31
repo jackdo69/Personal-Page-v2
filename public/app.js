@@ -46,7 +46,7 @@ for (let i = 0; i < preload.length; i++) {
 document.onclick = function(e) {
   var x = document.getElementById("topnav");
   if (e.target.className === 'fas fa-bars fa-2x' && x.className === 'nav-list') {
-    x.className += " responsive"
+    x.className += " responsive w3-animate-right"
   } else if (e.target.className === 'fas fa-bars fa-2x' && x.className === 'nav-list responsive'){
     x.className = 'nav-list'
   } else {
