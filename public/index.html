@@ -17,14 +17,19 @@
 <body onload="myFunction()">
     <!-- Preloader -->
     <div id="preload">
-        <svg id="preloader" width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M65 122.333C96.6643 122.333 122.333 96.6643 122.333 65C122.333 33.3357 96.6643 7.66667 65 7.66667C33.3357 7.66667 7.66667 33.3357 7.66667 65C7.66667 96.6643 33.3357 122.333 65 122.333ZM129 65C129 100.346 100.346 129 65 129C29.6538 129 1 100.346 1 65C1 29.6538 29.6538 1 65 1C100.346 1 129 29.6538 129 65Z" stroke="#C06B3B" stroke-width="2"/>
-            <path d="M45.8147 93.5519L45.826 93.5485L45.8373 93.5449C47.7936 92.9189 49.3354 92.1376 50.3346 91.1384C51.4746 89.9984 51.9925 88.4685 51.9925 86.6775C51.9925 84.8435 51.3725 83.2607 50.1192 82.0012C48.8012 80.598 46.8609 79.99 44.5087 79.99C42.9385 79.99 41.3351 80.4694 39.7123 81.3607C38.0948 82.214 36.7596 83.5231 35.696 85.2412C34.5931 87.0227 34.0675 89.1479 34.0675 91.5688C34.0675 96.9222 36.0025 101.206 39.9068 104.297C43.7581 107.346 48.6166 108.835 54.405 108.835C58.515 108.835 62.3245 107.845 65.815 105.863C69.3985 103.871 72.2559 100.966 74.3866 97.1778C76.5335 93.361 77.5863 88.8627 77.5863 83.72V31.5088C77.5863 30.5486 77.7989 30.1178 77.9759 29.9409C78.253 29.6637 78.75 29.4375 79.6575 29.4375H87.8475H88.8475V28.4375V24.7975V23.7975H87.8475H54.86H53.86V24.7975V28.4375V29.4375H54.86H63.05C63.9723 29.4375 64.3815 29.6696 64.5657 29.8846L64.6158 29.943L64.6742 29.993C64.8891 30.1772 65.1212 30.5865 65.1212 31.5088V89.5213C65.1212 93.3624 64.146 96.6034 62.2348 99.2933C60.3859 101.895 57.8166 103.195 54.405 103.195C51.0508 103.195 48.2749 102.54 46.0331 101.282C43.8455 99.9797 42.8925 98.3792 42.8925 96.46C42.8925 95.4802 43.1174 94.9588 43.3745 94.6866C43.8272 94.3017 44.6082 93.9067 45.8147 93.5519Z" stroke="#C06B3B" stroke-width="2"/>
+        <svg id="preloader" width="130" height="130" viewBox="0 0 130 130" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M65 122.333C96.6643 122.333 122.333 96.6643 122.333 65C122.333 33.3357 96.6643 7.66667 65 7.66667C33.3357 7.66667 7.66667 33.3357 7.66667 65C7.66667 96.6643 33.3357 122.333 65 122.333ZM129 65C129 100.346 100.346 129 65 129C29.6538 129 1 100.346 1 65C1 29.6538 29.6538 1 65 1C100.346 1 129 29.6538 129 65Z"
+                stroke="#C06B3B" stroke-width="2" />
+            <path
+                d="M45.8147 93.5519L45.826 93.5485L45.8373 93.5449C47.7936 92.9189 49.3354 92.1376 50.3346 91.1384C51.4746 89.9984 51.9925 88.4685 51.9925 86.6775C51.9925 84.8435 51.3725 83.2607 50.1192 82.0012C48.8012 80.598 46.8609 79.99 44.5087 79.99C42.9385 79.99 41.3351 80.4694 39.7123 81.3607C38.0948 82.214 36.7596 83.5231 35.696 85.2412C34.5931 87.0227 34.0675 89.1479 34.0675 91.5688C34.0675 96.9222 36.0025 101.206 39.9068 104.297C43.7581 107.346 48.6166 108.835 54.405 108.835C58.515 108.835 62.3245 107.845 65.815 105.863C69.3985 103.871 72.2559 100.966 74.3866 97.1778C76.5335 93.361 77.5863 88.8627 77.5863 83.72V31.5088C77.5863 30.5486 77.7989 30.1178 77.9759 29.9409C78.253 29.6637 78.75 29.4375 79.6575 29.4375H87.8475H88.8475V28.4375V24.7975V23.7975H87.8475H54.86H53.86V24.7975V28.4375V29.4375H54.86H63.05C63.9723 29.4375 64.3815 29.6696 64.5657 29.8846L64.6158 29.943L64.6742 29.993C64.8891 30.1772 65.1212 30.5865 65.1212 31.5088V89.5213C65.1212 93.3624 64.146 96.6034 62.2348 99.2933C60.3859 101.895 57.8166 103.195 54.405 103.195C51.0508 103.195 48.2749 102.54 46.0331 101.282C43.8455 99.9797 42.8925 98.3792 42.8925 96.46C42.8925 95.4802 43.1174 94.9588 43.3745 94.6866C43.8272 94.3017 44.6082 93.9067 45.8147 93.5519Z"
+                stroke="#C06B3B" stroke-width="2" />
         </svg>
     </div>
     <!-- End of preloader -->
-    
-    
+
+
 
 
     <!-- Main content -->
@@ -33,7 +38,7 @@
         <div class="nav">
             <nav class="w3-animate-opacity">
                 <img src="./img/logo.png" alt="logo">
-                <div class="dropdown" >
+                <div class="dropdown">
                     <i style="color: white;" class="fas fa-bars fa-2x"></i>
                 </div>
                 <ul id="topnav" class="nav-list">
@@ -45,7 +50,7 @@
             </nav>
         </div>
 
-        
+
         <!-- End of Navigation -->
 
         <div class="sections">
@@ -106,16 +111,14 @@
                             <div class="middle">
                                 <a href="https://restaurant-app-8781d.firebaseapp.com/"><i
                                         class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/jackdo69/restaurant-app"><i
-                                        class="fas fa-code"></i></a>
+                                <a href="https://github.com/jackdo69/restaurant-app"><i class="fas fa-code"></i></a>
                             </div>
                             <p class="description">[ReactJS] Restaurant app allows order and make booking.</p>
                         </div>
                         <div class="project" data-scroll>
                             <img src="https://i.imgur.com/Gbw8Caj.png" alt="">
                             <div class="middle">
-                                <a href="https://pronote-2026b.web.app/"><i
-                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="https://pronote-2026b.web.app/"><i class="fas fa-external-link-alt"></i></a>
                                 <a href="https://github.com/jackdo69/Pronote"><i class="fas fa-code"></i></a>
                             </div>
                             <p class="description">[VueJS] App allow writing and storing personal notes</p>
@@ -123,10 +126,8 @@
                         <div class="project" data-scroll>
                             <img src="https://i.imgur.com/lm1sJzB.png" alt="">
                             <div class="middle">
-                                <a href="http://orientalproduce.com.au/"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/jackdo69/Oriental-Produce"><i
-                                        class="fas fa-code"></i></a>
+                                <a href="http://orientalproduce.com.au/"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jackdo69/Oriental-Produce"><i class="fas fa-code"></i></a>
                             </div>
                             <p class="description">[Wordpress] Business website with blogs</p>
                         </div>
@@ -143,8 +144,7 @@
                             <div class="middle">
                                 <a href="https://codepen.io/jackdo69/full/oNggPYQ"><i
                                         class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/jackdo69/pomodoro-clock"><i
-                                        class="fas fa-code"></i></a>
+                                <a href="https://github.com/jackdo69/pomodoro-clock"><i class="fas fa-code"></i></a>
                             </div>
                             <p class="description">[VueJS] Pomodoro stop watch</p>
                         </div>
