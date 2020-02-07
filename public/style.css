@@ -158,6 +158,10 @@ nav {
   #s3 {
     height: auto;
   }
+
+  #s4 {
+    height: 80vh;
+  }
   
   footer {
     background:  rgb(20, 8, 8);

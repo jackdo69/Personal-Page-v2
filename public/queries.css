@@ -120,6 +120,10 @@
   .middle i {
     font-size: 40px;
   }
+
+  #s4 {
+    height: 50vh;
+  }
 }
 
 /* Small phones: from 0 to 480px */
