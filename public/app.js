@@ -35,11 +35,11 @@ function showPage() {
 
 
 //Preload stroke calculation
-const preload = document.querySelectorAll("#preload path");
-for (let i = 0; i < preload.length; i++) {
-  console.log(`letter ${i} is ${preload[i].getTotalLength()}`);
+// const preload = document.querySelectorAll("#preload path");
+// for (let i = 0; i < preload.length; i++) {
+//   console.log(`letter ${i} is ${preload[i].getTotalLength()}`);
   
-}
+// }
 
 //Toggle dropdown menu in mobile device
 
